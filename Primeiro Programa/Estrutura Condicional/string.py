@@ -24,3 +24,7 @@ numeros.extend(["Laranja", "Maçã", "Uva"]) #adiciona uma lista dentro de outra
 print(numeros)
 numeros.insert(2, "Casa") #adiciona um item em uma posição específica da lista
 print(numeros)
+numeros.pop(5) #remove um item da lista pelo índice
+print(numeros)
+numeros.remove("Laranja") #remove um item da lista pelo valor
+print(numeros)
