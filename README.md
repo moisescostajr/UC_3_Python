@@ -1,2 +1,1 @@
-# UC_3_Python
-Aprendendo Python - SENAC
+# UC 3 - Python - SENAC/Corumbá-MS
