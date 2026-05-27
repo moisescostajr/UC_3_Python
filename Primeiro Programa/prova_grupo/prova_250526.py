@@ -2,6 +2,8 @@ print("=" * 45)
 print("   Sistema de Gestão de Hemonúcleo")
 print("=" * 45)
 
+#-----------------------------------------------------------------
+
 
 def mostrar_recomendacoes():
     recomendacoes = [
@@ -13,8 +15,9 @@ def mostrar_recomendacoes():
     print("\n--- Recomendações ---")
     for i in recomendacoes:
         print(f"{i}")
-    return "Boa doação!!!"
+    return "Boa doação!!!" 
 
+#-----------------------------------------------------------------
 
 print("\n--- Cadastro do Doador ---")
 
@@ -32,7 +35,7 @@ responsavel = "não precisa"
 if idade >= 16 and idade <= 17:
     while True:
         responsavel = input("O responsável legal está presente? (Sim/Não): ").strip().lower()
-        if responsavel in ("sim", "não", "nao"):
+        if responsavel in ("sim", "não", "nao",):
             break
         print("Digite apenas Sim ou Não.")        
 
@@ -86,6 +89,9 @@ elif alimentado != "sim":
 
 else:
     print("\nAprovado para a próxima fase da triagem!")
+    
+#-----------------------------------------------------------------
+
 
     print("\n--- Histórico Médico ---")
 
@@ -107,6 +113,9 @@ else:
 
     if not impedido:
         print("\nAprovado para a próxima fase da triagem!")
+        
+#-----------------------------------------------------------------
+
 
         print("\n--- Período de Espera ---")
 
@@ -117,7 +126,7 @@ else:
         endoscopia = input("Fez endoscopia nos últimos 6 meses? (Sim/Não): ").strip().lower()
         gripe = input("Ficou gripado nos últimos 14 dias? (Sim/Não): ").strip().lower()
         dengue = input("Teve dengue recentemente? (Sim/Não): ").strip().lower()
-
+        
         espera = 0
 
         if tatuagem == "sim" or transfusao == "sim" or parto == "sim" or prep == "sim":
@@ -137,7 +146,10 @@ else:
             print(f"\nDOAÇÃO SUSPENSA TEMPORARIAMENTE: {espera}")
 
         else:
-            print("\nAprovado!")
+            print("\nAprovado para a Doação!")
+            
+#-----------------------------------------------------------------
+
 
             print("\n--- Intervalo Entre Doações ---")
 
@@ -166,16 +178,27 @@ else:
 
             if intervalo:
                 print(f"\nDOAÇÃO SUSPENSA: {intervalo}")
+                
 
             else:
                 print("=" * 45)
                 print(f"PARABÉNS, {nome.upper()}!")
                 print("  Você está APTO(A) para doar sangue!")
                 print("=" * 45)
+                
+#-----------------------------------------------------------------
+
 
                 mensagem = mostrar_recomendacoes()
                 print(f"\n ***{mensagem}***")
+                
+#-----------------------------------------------------------------
+
+                
 
 print("-" * 45)
 print("  Obrigado pelo uso do Sistema Hemonúcleo!")
 print("-" * 45)
+
+
+#-----------------------------------------------------------------
