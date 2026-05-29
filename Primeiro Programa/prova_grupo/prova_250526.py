@@ -35,7 +35,7 @@ responsavel = "não precisa"
 if idade >= 16 and idade <= 17:
     while True:
         responsavel = input("O responsável legal está presente? (Sim/Não): ").strip().lower()
-        if responsavel in ("sim", "não", "nao",):
+        if responsavel in ("sim", "não", "nao"):
             break
         print("Digite apenas Sim ou Não.")        
 
@@ -199,6 +199,8 @@ else:
 print("-" * 45)
 print("  Obrigado pelo uso do Sistema Hemonúcleo!")
 print("-" * 45)
+
+
 
 
 #-----------------------------------------------------------------

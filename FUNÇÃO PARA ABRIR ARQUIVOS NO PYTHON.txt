@@ -1,0 +1,9 @@
+FUNÇÃO
+OPEN - ABRIR ARQUIVO
+CLOSE - FECHAR
+
+MODO DE ABERURA DO ARQUIVO
+
+r - ABRE SOMENTE PARA LEITURA (r - read)
+a - ABRE PARA A ESCRITA ( a - appen, esse modo de abertura faz a concatençâo no final do arquivo)
+w - ABRE PARA A ESCRITA ( w - write, sem concatenar, esse modo apaga tudo que tem no arquivo)
