@@ -1,0 +1,8 @@
+#matriz tridimensional = matrizes dentro de outra matriz, sempre começa com 3 colchetes.
+
+notas = [[[2.0, 5.0, 3.4],
+          [5.0, 3.5, 6.5]],
+          [[5.9, 6.8, 2.3],
+           [3.0, 1.1, 4.5]]]
+
+print(notas[1][0][1]) #primeiro colchete = matriz, segundo = linha e o terceiro = coluna
